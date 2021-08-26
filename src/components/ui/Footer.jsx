@@ -118,7 +118,7 @@ const Footer = (props) => {
                   setselectedindex(2);
                 }}
               >
-                Mobile App Developmnet
+                IOS/Android App Developmnet
               </Grid>
               <Grid
                 item
@@ -225,15 +225,38 @@ const Footer = (props) => {
         src={footeradorment}
         className={classes.adroment}
       />
-      <Grid container justifyContent="flex-end" spacing={2} className={classes.socialcontainer}>
-        <Grid item component={"a"} href="http://www.facebook.com" rel="noopener noreferrer" target="_blank">
+      <Grid
+        container
+        justifyContent="flex-end"
+        spacing={2}
+        className={classes.socialcontainer}
+      >
+        <Grid
+          item
+          component={'a'}
+          href="http://www.facebook.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <img src={facebook} alt="facebook" className={classes.icon} />
         </Grid>
-        <Grid item component={"a"} href="http://www.twitter.com" rel="noopener noreferrer" target="_blank">
-          <img src={twitter} alt="twitter" className={classes.icon}/>
+        <Grid
+          item
+          component={'a'}
+          href="http://www.twitter.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src={twitter} alt="twitter" className={classes.icon} />
         </Grid>
-        <Grid item component={"a"} href="http://www.instagram.com" rel="noopener noreferrer" target="_blank">
-          <img src={instagram} alt="instagram" className={classes.icon}/>
+        <Grid
+          item
+          component={'a'}
+          href="http://www.instagram.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src={instagram} alt="instagram" className={classes.icon} />
         </Grid>
       </Grid>
     </footer>
