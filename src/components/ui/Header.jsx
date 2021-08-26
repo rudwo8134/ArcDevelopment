@@ -107,6 +107,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 const Header = (props) => {
+  const { value, setValue, selectedindex, setselectedindex } = props;
   const theme = useTheme();
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
   const matches = useMediaQuery(theme.breakpoints.down(
@@ -114,10 +115,10 @@ const Header = (props) => {
   ))
   const classes = useStyles()
   const [openDrawer, setopenDrawer] = useState(false)
-  const [value,setValue] = useState(0);
+ 
   const [anchorEl,setAnchorEl] = useState(null)
   const [openMenu, setOpenMenu] = useState(false)
-  const [selectedindex, setselectedindex] = useState(0)
+
 
   const Clickhandler = (e, newValue) =>{
     setValue(newValue);
