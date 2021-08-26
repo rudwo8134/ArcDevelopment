@@ -24,11 +24,18 @@ export default createTheme({
       fontWeight: '700',
       fontSize: '1rem',
     },
+    h2: {
+      fontFamily: 'Raleway',
+      fontSize: '2.5rem',
+      fontWeight: '700',
+      color: `${arcBlue}`,
+      lineHeight: 1.5
+    },
     estimate: {
       fontFamily: 'Pacifico',
       fontSize: '1rem',
       textTransform: 'none',
-      color:"white"
+      color: 'white',
     },
   },
 });
