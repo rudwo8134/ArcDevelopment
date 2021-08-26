@@ -43,6 +43,11 @@ export default createTheme({
       fontWeight: '700',
       color: arcBlue,
     },
+    h3: {
+      fontFamily: 'Pacifico',
+      fontSize: '2.5rem',
+      color: arcBlue,
+    },
     subtitle1: {
       fontSize: '1.25rem',
       fontWeight: '300',

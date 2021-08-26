@@ -340,23 +340,23 @@ const Header = (props) => {
   );
   return (
     <>
-      <ElevationScroll>
-        <AppBar position="fixed" className={classes.appbar}>
-          <Toolbar disableGutters={true}>
-            <Button
-              component={Link}
-              to="/"
-              className={classes.logoContainer}
-              onClick={() => setValue(0)}
-              disableRipple
-            >
-              <img src={logo} alt="Company logo" className={classes.logo} />
-            </Button>
-            {matches ? drawer :  tabs}
-          </Toolbar>
-        </AppBar>
-      </ElevationScroll>
-      <div className={classes.toolbarMargin} />
+        <ElevationScroll>
+          <AppBar position="fixed" className={classes.appbar}>
+            <Toolbar disableGutters={true}>
+              <Button
+                component={Link}
+                to="/"
+                className={classes.logoContainer}
+                onClick={() => setValue(0)}
+                disableRipple
+              >
+                <img src={logo} alt="Company logo" className={classes.logo} />
+              </Button>
+              {matches ? drawer : tabs}
+            </Toolbar>
+          </AppBar>
+        </ElevationScroll>
+        <div className={classes.toolbarMargin} />
     </>
   );
 }

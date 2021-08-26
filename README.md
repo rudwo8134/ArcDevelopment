@@ -15,3 +15,4 @@ Author: Eric.shin
    4. make the responsibe footer on md xs size **remove the footer navigation because in Mobile, user does not need it **
    5. add the landingpage on the homepage. add the animation with svg file
    6. add the Service Component 
+   7. add the revolution block on the home
