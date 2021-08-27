@@ -6,6 +6,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Footer from "./ui/Footer";
 import LandingPage from "./LandingPage";
 import Services from "./Services";
+import CustomerSoftware from "./CustomerSoftware";
 
 
 function App() {
@@ -46,7 +47,13 @@ function App() {
           <Route
             exact
             path="/customsoftware"
-            component={() => <div>customsoftware</div>}
+            render={(props) => (
+              <CustomerSoftware
+                {...props}
+                setValue={setValue}
+                setselectedindex={setselectedindex}
+              />
+            )}
           />
           <Route
             exact

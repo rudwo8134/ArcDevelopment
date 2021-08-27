@@ -18,3 +18,9 @@ Author: Eric.shin
    7. add the revolution block on the home
    8. Finish the Landing Page Section. and find the bug due to information block size. so i just change the marginbottom size using by useMediaquery
    9. add the Service Page with Same block with home.
+   10. add the cusotmer software development page with animation using lottie
+
+Finished for today (Date: 2021/08/26)
+
+## 2day 
+  1.  

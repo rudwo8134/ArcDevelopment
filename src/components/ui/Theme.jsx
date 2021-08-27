@@ -37,6 +37,11 @@ export default createTheme({
       textTransform: 'none',
       color: 'white',
     },
+    body1: {
+      fontSize: '1.25rem',
+      fontWeight: '300',
+      color: arcGrey,
+    },
     h4: {
       fontFamily: 'Raleway',
       fontSize: '1.75rem',
@@ -56,7 +61,7 @@ export default createTheme({
     subtitle2: {
       fontSize: '1.25rem',
       fontWeight: '300',
-      color: "white"
+      color: 'white',
     },
     learnbutton: {
       borderColor: arcBlue,
