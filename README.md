@@ -23,4 +23,6 @@ Author: Eric.shin
 Finished for today (Date: 2021/08/26)
 
 ## 2day 
-  1.  
+  1.  Add the IOS/Android Pages and animation
+
+Finished for today (Date:2021/08/27)
