@@ -5,6 +5,7 @@ import theme from './ui/Theme'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Footer from "./ui/Footer";
 import LandingPage from "./LandingPage";
+import Services from "./Services";
 
 
 function App() {
@@ -31,7 +32,17 @@ function App() {
               />
             )}
           />
-          <Route exact path="/services" component={() => <div>services</div>} />
+          <Route
+            exact
+            path="/services"
+            render={(props) => (
+              <Services
+                {...props}
+                setValue={setValue}
+                setselectedindex={setselectedindex}
+              />
+            )}
+          />
           <Route
             exact
             path="/customsoftware"
