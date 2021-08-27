@@ -16,3 +16,4 @@ Author: Eric.shin
    5. add the landingpage on the homepage. add the animation with svg file
    6. add the Service Component 
    7. add the revolution block on the home
+   8. Finish the Landing Page Section. and find the bug due to information block size. so i just change the marginbottom size using by useMediaquery

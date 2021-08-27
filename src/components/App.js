@@ -23,7 +23,13 @@ function App() {
           <Route
             exact
             path="/"
-            component={() => <LandingPage/>}
+            render={(props) => (
+              <LandingPage
+                {...props}
+                setValue={setValue}
+                setselectedindex={setselectedindex}
+              />
+            )}
           />
           <Route exact path="/services" component={() => <div>services</div>} />
           <Route
@@ -46,12 +52,7 @@ function App() {
           <Route exact path="/contact" component={() => <div>contact</div>} />
           <Route exact path="/estimate" component={() => <div>estimate</div>} />
         </Switch>
-        <Footer
-          value={value}
-          setValue={setValue}
-          selectedindex={selectedindex}
-          setselectedindex={setselectedindex}
-        />
+        <Footer setValue={setValue} setselectedindex={setselectedindex} />
       </BrowserRouter>
     </ThemeProvider>
   );

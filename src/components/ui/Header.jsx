@@ -197,6 +197,9 @@ const Header = (props) => {
             }
           }
           break;
+          case "/estimate":
+            setValue(5);
+            break;
           default:
             break;
         }
