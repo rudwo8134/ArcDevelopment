@@ -10,6 +10,7 @@ import CustomerSoftware from "./CustomerSoftware";
 import Mobileapp from "./Mobileapp";
 import Website from "./Website";
 import Revolution from "./Revolution";
+import Aboutus from "./Aboutus";
 
 
 function App() {
@@ -92,7 +93,17 @@ function App() {
               />
             )}
           />
-          <Route exact path="/about" component={() => <div>about</div>} />
+          <Route
+            exact
+            path="/about"
+            component={(props) => (
+              <Aboutus
+                {...props}
+                setValue={setValue}
+                setselectedindex={setselectedindex}
+              />
+            )}
+          />
           <Route exact path="/contact" component={() => <div>contact</div>} />
           <Route exact path="/estimate" component={() => <div>estimate</div>} />
         </Switch>

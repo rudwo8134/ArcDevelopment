@@ -29,4 +29,4 @@ Finished for today (Date:2021/08/27)
 
 ## 3day 
   1.  Add the webste page
-  2.  
+  2.  Add the Revolution pages with responsive function
