@@ -11,6 +11,7 @@ import Mobileapp from "./Mobileapp";
 import Website from "./Website";
 import Revolution from "./Revolution";
 import Aboutus from "./Aboutus";
+import Contact from "./Contact";
 
 
 function App() {
@@ -104,7 +105,17 @@ function App() {
               />
             )}
           />
-          <Route exact path="/contact" component={() => <div>contact</div>} />
+          <Route
+            exact
+            path="/contact"
+            component={(props) => (
+              <Contact
+                {...props}
+                setValue={setValue}
+                setselectedindex={setselectedindex}
+              />
+            )}
+          />
           <Route exact path="/estimate" component={() => <div>estimate</div>} />
         </Switch>
         <Footer setValue={setValue} setselectedindex={setselectedindex} />
