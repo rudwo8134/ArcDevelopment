@@ -9,6 +9,7 @@ import Services from "./Services";
 import CustomerSoftware from "./CustomerSoftware";
 import Mobileapp from "./Mobileapp";
 import Website from "./Website";
+import Revolution from "./Revolution";
 
 
 function App() {
@@ -79,11 +80,17 @@ function App() {
               />
             )}
           />
-          <Route exact path="/websites" component={() => <div>websites</div>} />
+
           <Route
             exact
             path="/revolution"
-            component={() => <div>revolution</div>}
+            component={(props) => (
+              <Revolution
+                {...props}
+                setValue={setValue}
+                setselectedindex={setselectedindex}
+              />
+            )}
           />
           <Route exact path="/about" component={() => <div>about</div>} />
           <Route exact path="/contact" component={() => <div>contact</div>} />
