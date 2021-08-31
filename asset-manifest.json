@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/ArcDevelopment/static/js/main.880f318b.chunk.js",
-    "main.js.map": "/ArcDevelopment/static/js/main.880f318b.chunk.js.map",
+    "main.js": "/ArcDevelopment/static/js/main.66c35f51.chunk.js",
+    "main.js.map": "/ArcDevelopment/static/js/main.66c35f51.chunk.js.map",
     "runtime-main.js": "/ArcDevelopment/static/js/runtime-main.5f80a14a.js",
     "runtime-main.js.map": "/ArcDevelopment/static/js/runtime-main.5f80a14a.js.map",
-    "static/js/2.288753fc.chunk.js": "/ArcDevelopment/static/js/2.288753fc.chunk.js",
-    "static/js/2.288753fc.chunk.js.map": "/ArcDevelopment/static/js/2.288753fc.chunk.js.map",
+    "static/js/2.0eebae64.chunk.js": "/ArcDevelopment/static/js/2.0eebae64.chunk.js",
+    "static/js/2.0eebae64.chunk.js.map": "/ArcDevelopment/static/js/2.0eebae64.chunk.js.map",
     "index.html": "/ArcDevelopment/index.html",
-    "static/js/2.288753fc.chunk.js.LICENSE.txt": "/ArcDevelopment/static/js/2.288753fc.chunk.js.LICENSE.txt",
+    "static/js/2.0eebae64.chunk.js.LICENSE.txt": "/ArcDevelopment/static/js/2.0eebae64.chunk.js.LICENSE.txt",
     "static/media/Custom Software Icon.c2d29ed8.svg": "/ArcDevelopment/static/media/Custom Software Icon.c2d29ed8.svg",
     "static/media/Footer Adornment.b344a3e1.svg": "/ArcDevelopment/static/media/Footer Adornment.b344a3e1.svg",
     "static/media/analytics.d03f9bf2.svg": "/ArcDevelopment/static/media/analytics.d03f9bf2.svg",
@@ -19,6 +19,7 @@
     "static/media/consultationIcon.99f7defa.svg": "/ArcDevelopment/static/media/consultationIcon.99f7defa.svg",
     "static/media/designIcon.910023dc.svg": "/ArcDevelopment/static/media/designIcon.910023dc.svg",
     "static/media/ecommerce.af6c04ed.svg": "/ArcDevelopment/static/media/ecommerce.af6c04ed.svg",
+    "static/media/email.fc5421b5.svg": "/ArcDevelopment/static/media/email.fc5421b5.svg",
     "static/media/extendAccess.cb921742.svg": "/ArcDevelopment/static/media/extendAccess.cb921742.svg",
     "static/media/facebook.5ebde1b6.svg": "/ArcDevelopment/static/media/facebook.5ebde1b6.svg",
     "static/media/forwardArrow.dd52a508.svg": "/ArcDevelopment/static/media/forwardArrow.dd52a508.svg",
@@ -37,10 +38,12 @@
     "static/media/mobileIcon.17cd04f1.svg": "/ArcDevelopment/static/media/mobileIcon.17cd04f1.svg",
     "static/media/mockupIcon.718d338d.svg": "/ArcDevelopment/static/media/mockupIcon.718d338d.svg",
     "static/media/outreach.83721350.svg": "/ArcDevelopment/static/media/outreach.83721350.svg",
+    "static/media/phone.98d33f30.svg": "/ArcDevelopment/static/media/phone.98d33f30.svg",
     "static/media/puppy.a03c1cd9.svg": "/ArcDevelopment/static/media/puppy.a03c1cd9.svg",
     "static/media/repeatingBackground.02252817.svg": "/ArcDevelopment/static/media/repeatingBackground.02252817.svg",
     "static/media/reviewIcon.89293063.svg": "/ArcDevelopment/static/media/reviewIcon.89293063.svg",
     "static/media/root.c1833745.svg": "/ArcDevelopment/static/media/root.c1833745.svg",
+    "static/media/send.013d09eb.svg": "/ArcDevelopment/static/media/send.013d09eb.svg",
     "static/media/seo.c74a3d1d.svg": "/ArcDevelopment/static/media/seo.c74a3d1d.svg",
     "static/media/stopwatch.db25634f.svg": "/ArcDevelopment/static/media/stopwatch.db25634f.svg",
     "static/media/swissKnife.6c41ee0a.svg": "/ArcDevelopment/static/media/swissKnife.6c41ee0a.svg",
@@ -51,7 +54,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5f80a14a.js",
-    "static/js/2.288753fc.chunk.js",
-    "static/js/main.880f318b.chunk.js"
+    "static/js/2.0eebae64.chunk.js",
+    "static/js/main.66c35f51.chunk.js"
   ]
 }
