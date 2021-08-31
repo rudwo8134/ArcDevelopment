@@ -66,7 +66,7 @@ const Mobileapp = (props) => {
               style={{ backgroundColor: 'transparent' }}
               component={Link}
               to="/customsoftware"
-              onClick={() => props.setSelectedIndex(1)}
+              onClick={() => props.setselectedindex(1)}
             >
               <img
                 src={backarrow}
@@ -115,7 +115,7 @@ const Mobileapp = (props) => {
               style={{ backgroundColor: 'transparent' }}
               component={Link}
               to="/websites"
-              onClick={() => props.setSelectedIndex(3)}
+              onClick={() => props.setselectedindex(3)}
             >
               <img
                 src={forwardarrow}
@@ -229,7 +229,11 @@ const Mobileapp = (props) => {
             </Typography>
           </Grid>
           <Grid item>
-            <img src={access} alt="extend acess" style={{ maxWidth: matchesSM ? '20em' : "28em" }} />
+            <img
+              src={access}
+              alt="extend acess"
+              style={{ maxWidth: matchesSM ? '20em' : '28em' }}
+            />
           </Grid>
         </Grid>
         <Grid item container direction="column" md alignItems="center">
@@ -244,7 +248,7 @@ const Mobileapp = (props) => {
         </Grid>
       </Grid>
       <Grid item>
-        <Calltoaction setValue={setValue}/>
+        <Calltoaction setValue={setValue} />
       </Grid>
     </Grid>
   );

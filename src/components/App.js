@@ -8,6 +8,7 @@ import LandingPage from "./LandingPage";
 import Services from "./Services";
 import CustomerSoftware from "./CustomerSoftware";
 import Mobileapp from "./Mobileapp";
+import Website from "./Website";
 
 
 function App() {
@@ -39,6 +40,17 @@ function App() {
             path="/services"
             render={(props) => (
               <Services
+                {...props}
+                setValue={setValue}
+                setselectedindex={setselectedindex}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/websites"
+            render={(props) => (
+              <Website
                 {...props}
                 setValue={setValue}
                 setselectedindex={setselectedindex}
