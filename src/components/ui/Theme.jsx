@@ -48,6 +48,12 @@ export default createTheme({
       fontWeight: '700',
       color: arcBlue,
     },
+    h6: {
+      fontFamily: 'Raleway',
+      color: arcBlue,
+      fontWeight: '500',
+      lineHeight: 1
+    },
     h3: {
       fontFamily: 'Pacifico',
       fontSize: '2.5rem',
@@ -86,9 +92,9 @@ export default createTheme({
       },
     },
     MuiInput: {
-      root:{
+      root: {
         color: arcGrey,
-        fontWeight: 300
+        fontWeight: 300,
       },
       underline: {
         '&:before': {

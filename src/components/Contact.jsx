@@ -122,6 +122,9 @@ const Contact = (props) => {
     }
   };
 
+  const onconfirm = () =>{
+
+  }
   return (
     <Grid container direction="row">
       <Grid
@@ -277,7 +280,7 @@ const Contact = (props) => {
       </Grid>
 
       <Dialog
-        style={{zIndex:20000}}
+        style={{ zIndex: 20000 }}
         open={open}
         fullScreen={matchesXS}
         onClose={(e) => setopen(false)}
@@ -303,87 +306,99 @@ const Contact = (props) => {
         }}
       >
         <DialogContent>
-          <Grid container direction="column">
-            <Grid item>
-              <Typography align="center" variant="h4" gutterBottom>
-                Confirm Message
-              </Typography>
-            </Grid>
-            <Grid item style={{ marginBottom: '0.5em' }}>
-              <TextField
-                label="Name"
-                id="name"
-                fullWidth
-                value={name}
-                onChange={(event) => setname(event.target.value)}
-              />
-            </Grid>
-            <Grid item style={{ marginBottom: '0.5em' }}>
-              <TextField
-                error={emailHelper.length !== 0}
-                helperText={emailHelper}
-                label="Email"
-                id="email"
-                fullWidth
-                value={email}
-                onChange={onChange}
-              />
-            </Grid>
-            <Grid item style={{ marginBottom: '0.5em' }}>
-              <TextField
-                label="Phone"
-                id="phone"
-                helperText={phoneHelper}
-                error={phoneHelper.length !== 0}
-                fullWidth
-                value={phone}
-                onChange={onChange}
-              />
-            </Grid>
-          </Grid>
-          <Grid item style={{ maxWidth: matchesXS ? "100%" : '20em' }}>
-            <TextField
-              inputProps={{ disableUnderline: true }}
-              multiline
-              rows={10}
-              fullWidth
-              onChange={(e) => setmessage(e.target.value)}
-              value={message}
-              id="message"
-              className={classes.Message}
-            />
-          </Grid>
-          <Grid item container style={{ marginTop: '2em' }} alignItems="center" direction={matchesSM ? "column" : "row"}>
-            <Grid item>
-              <Button
-                style={{ fontWeight: 300 }}
-                color="primary"
-                onClick={() => setopen(false)}
-              >
-                Cancel
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                disabled={
-                  name.length === 0 ||
-                  message.length === 0 ||
-                  phoneHelper.length !== 0 ||
-                  emailHelper.length !== 0
-                }
-                variant="contained"
-                className={classes.sendbutton}
-                onClick={() => setopen(true)}
-              >
-                Send Message
-                <img
-                  src={Airplane}
-                  alt="send icon"
-                  style={{ marginLeft: '1em' }}
+          <form action="https://formspree.io/f/xzbyyrpd" method="POST">
+            <Grid container direction="column">
+              <Grid item>
+                <Typography align="center" variant="h4" gutterBottom>
+                  Confirm Message
+                </Typography>
+              </Grid>
+              <Grid item style={{ marginBottom: '0.5em' }}>
+                <TextField
+                  required
+                  label="Name"
+                  id="name"
+                  fullWidth
+                  value={name}
+                  onChange={(event) => setname(event.target.value)}
                 />
-              </Button>
+              </Grid>
+              <Grid item style={{ marginBottom: '0.5em' }}>
+                <TextField
+                  required
+                  error={emailHelper.length !== 0}
+                  helperText={emailHelper}
+                  label="Email"
+                  id="email"
+                  fullWidth
+                  value={email}
+                  onChange={onChange}
+                />
+              </Grid>
+              <Grid item style={{ marginBottom: '0.5em' }}>
+                <TextField
+                  required
+                  label="Phone"
+                  id="phone"
+                  helperText={phoneHelper}
+                  error={phoneHelper.length !== 0}
+                  fullWidth
+                  value={phone}
+                  onChange={onChange}
+                />
+              </Grid>
             </Grid>
-          </Grid>
+            <Grid item style={{ maxWidth: matchesXS ? '100%' : '20em' }}>
+              <TextField
+                required
+                inputProps={{ disableUnderline: true }}
+                multiline
+                rows={10}
+                fullWidth
+                onChange={(e) => setmessage(e.target.value)}
+                value={message}
+                id="message"
+                className={classes.Message}
+              />
+            </Grid>
+            <Grid
+              item
+              container
+              style={{ marginTop: '2em' }}
+              alignItems="center"
+              direction={matchesSM ? 'column' : 'row'}
+            >
+              <Grid item>
+                <Button
+                  style={{ fontWeight: 300 }}
+                  color="primary"
+                  onClick={() => setopen(false)}
+                >
+                  Cancel
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  disabled={
+                    name.length === 0 ||
+                    message.length === 0 ||
+                    phoneHelper.length !== 0 ||
+                    emailHelper.length !== 0
+                  }
+                  variant="contained"
+                  className={classes.sendbutton}
+                  type="submit"
+                >
+                  Send Message
+                  <img
+                    src={Airplane}
+                    alt="send icon"
+                    style={{ marginLeft: '1em' }}
+                  />
+                </Button>
+              </Grid>
+            </Grid>
+          </form>
         </DialogContent>
       </Dialog>
 

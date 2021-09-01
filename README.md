@@ -6,6 +6,8 @@ Author: Eric.shin
    1. React-router-dom
    2. Material-Ui
    3. React-lottie
+   4. Firebase
+   5. NodeMailer
   
 
 ## 1day
@@ -37,3 +39,9 @@ Finished for today (Date:2021/08/27)
       <b>error</b> find on mobile version width. so I just fixed it with usemediaquery fuction. I changed the flex direction from row to col when sm size is applied to screen
    6. continue....
    7. <b>Error</b> find the error on the github page due to react-router-dom. I just use the Browser router api. that is why it has a error on the github pages. Therefore, I change the Router Component to Hashrouter
+   
+   finished for today (Date: 2021/08/31)
+
+## 4day
+   1. <b>Not working</b>Add the sending function by using firebase , nodemailer. but it is not free. so I will skip this section due to requiring money
+   2. add the estimate page 
