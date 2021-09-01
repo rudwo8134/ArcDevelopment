@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./ui/Header";
 import {ThemeProvider} from '@material-ui/styles'
 import theme from './ui/Theme'
-import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import {HashRouter as Router,Route,Switch} from 'react-router-dom'
 import Footer from "./ui/Footer";
 import LandingPage from "./LandingPage";
 import Services from "./Services";
@@ -19,7 +19,7 @@ function App() {
     const [selectedindex, setselectedindex] = useState(0);
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <Router>
         <Header
           value={value}
           setValue={setValue}
@@ -119,7 +119,7 @@ function App() {
           <Route exact path="/estimate" component={() => <div>estimate</div>} />
         </Switch>
         <Footer setValue={setValue} setselectedindex={setselectedindex} />
-      </BrowserRouter>
+      </Router>
     </ThemeProvider>
   );
 }
