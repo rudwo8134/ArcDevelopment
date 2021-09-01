@@ -8,6 +8,8 @@ Author: Eric.shin
    3. React-lottie
    4. Firebase
    5. NodeMailer
+   6. lodash
+   7. axios
   
 
 ## 1day
@@ -44,4 +46,9 @@ Finished for today (Date:2021/08/27)
 
 ## 4day
    1. <b>Not working</b>Add the sending function by using firebase , nodemailer. but it is not free. so I will skip this section due to requiring money
-   2. add the estimate page 
+   2. add the estimate page and choose function but it does not finish the send the mail function
+   
+-------------------------------------------
+finished (sep.01/2021)
+
+Could not finish the send mail function due to that I want to use the free stuff
