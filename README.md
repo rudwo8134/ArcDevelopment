@@ -31,8 +31,8 @@ Finished for today (Date:2021/08/27)
   1.  Add the webste page
   2.  Add the Revolution pages with responsive function
   3.  add the About us page with responsive function
-  4.  Add the validation for form (when they type all of information, they can send a message. Otherwise, button will be disabled.) and add the function call and email when user click the link on mobile phone. they can connect the call or maill directly. I used the <a> tag with mailto and tel.
+  4.  Add the validation for form (when they type all of information, they can send a message. Otherwise, button will be disabled.) and add the function call and email when user click the link on mobile phone. they can connect the call or maill directly. I used the a tag with mailto and tel.
   5.  Add the dialog function with material UI. User will confirm the messagge before send the message. user can change the value on the confirm statement.
       ---------------------
-      error find on mobile version width. so I just fixed it with usemediaquery fuction. I changed the flex direction from row to col when sm size is applied to screen
+      <b>error</b> find on mobile version width. so I just fixed it with usemediaquery fuction. I changed the flex direction from row to col when sm size is applied to screen
    6. 
