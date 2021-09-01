@@ -71,10 +71,50 @@ const Contact = (props) => {
   const theme = useTheme();
   const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
   const matchesMD = useMediaQuery(theme.breakpoints.down('md'));
+
   const [name,setname] = useState("")
+
   const [email,setemail] = useState("")
+   const [emailHelper, setemailhelper] = useState('');
+
   const [phone,setphone] = useState("")
+   const [phoneHelper, setphonehelper] = useState('');
+
   const [message,setmessage] = useState("")
+
+   const onChange = event => {
+    let valid;
+
+    switch (event.target.id) {
+      case "email":
+        setemail(event.target.value);
+        valid = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
+          event.target.value
+        );
+
+        if (!valid) {
+          setemailhelper('Invalid email');
+        } else {
+          setemailhelper('');
+        }
+        break;
+      case "phone":
+        setphone(event.target.value);
+        valid = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(
+          event.target.value
+        );
+
+        if (!valid) {
+          setphonehelper('Invalid phone');
+        } else {
+          setphonehelper("");
+        }
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <Grid container direction="row">
       <Grid
@@ -87,7 +127,7 @@ const Contact = (props) => {
         xl={3}
         style={{
           marginBottom: matchesMD ? '5em' : 0,
-          marginTop: matchesSM ? "1em" : matchesMD ? '5em' : 0,
+          marginTop: matchesSM ? '1em' : matchesMD ? '5em' : 0,
         }}
       >
         <Grid item>
@@ -121,7 +161,7 @@ const Contact = (props) => {
                 variant="body1"
                 style={{ color: theme.palette.common.blue, fontStyle: '1rem' }}
               >
-                (647) 530-8134
+                <a href="tel:6475308134" style={{textDecoration:"none", color: 'inherit'}}>(647) 530-8134</a>
               </Grid>
             </Grid>
             <Grid item container style={{ marginBottom: '2em' }}>
@@ -137,7 +177,7 @@ const Contact = (props) => {
                 variant="body1"
                 style={{ color: theme.palette.common.blue }}
               >
-                rudwo8134@gmail.com
+                <a href="mailto:rudwo8134@gmail.com" style={{textDecoration:"none", color: 'inherit'}}>rudwo8134@gmail.com</a>
               </Grid>
             </Grid>
             <Grid
@@ -157,20 +197,24 @@ const Contact = (props) => {
               </Grid>
               <Grid item style={{ marginBottom: '0.5em' }}>
                 <TextField
+                  error={emailHelper.length !== 0}
+                  helperText={emailHelper}
                   label="Email"
                   id="email"
                   fullWidth
                   value={email}
-                  onChange={(event) => setemail(event.target.value)}
+                  onChange={onChange}
                 />
               </Grid>
               <Grid item style={{ marginBottom: '0.5em' }}>
                 <TextField
                   label="Phone"
                   id="phone"
+                  helperText={phoneHelper}
+                  error={phoneHelper.length !== 0}
                   fullWidth
                   value={phone}
-                  onChange={(event) => setphone(event.target.value)}
+                  onChange={onChange}
                 />
               </Grid>
             </Grid>
@@ -180,9 +224,9 @@ const Contact = (props) => {
                 multiline
                 rows={10}
                 fullWidth
+                onChange={(e) => setmessage(e.target.value)}
                 value={message}
                 id="message"
-                onChange={(event) => setmessage(event.target.value)}
                 className={classes.Message}
               />
             </Grid>
@@ -192,7 +236,16 @@ const Contact = (props) => {
               justifyContent="center"
               style={{ marginTop: '2em' }}
             >
-              <Button variant="contained" className={classes.sendbutton}>
+              <Button
+                disabled={
+                  name.length === 0 ||
+                  message.length === 0 ||
+                  phoneHelper.length !== 0 ||
+                  emailHelper.length !== 0
+                }
+                variant="contained"
+                className={classes.sendbutton}
+              >
                 Send Message
                 <img
                   src={Airplane}
