@@ -62,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: theme.palette.secondary.light,
     },
+    [theme.breakpoints.down("sm")]:{
+      height: 40,
+      width: 225
+    }
   },
 }));
 
@@ -273,7 +277,9 @@ const Contact = (props) => {
       </Grid>
 
       <Dialog
+        style={{zIndex:20000}}
         open={open}
+        fullScreen={matchesXS}
         onClose={(e) => setopen(false)}
         PaperProps={{
           style: {
@@ -335,7 +341,7 @@ const Contact = (props) => {
               />
             </Grid>
           </Grid>
-          <Grid item style={{ maxWidth: '20em' }}>
+          <Grid item style={{ maxWidth: matchesXS ? "100%" : '20em' }}>
             <TextField
               inputProps={{ disableUnderline: true }}
               multiline
@@ -347,7 +353,7 @@ const Contact = (props) => {
               className={classes.Message}
             />
           </Grid>
-          <Grid item container style={{ marginTop: '2em' }} alignItems="center">
+          <Grid item container style={{ marginTop: '2em' }} alignItems="center" direction={matchesSM ? "column" : "row"}>
             <Grid item>
               <Button
                 style={{ fontWeight: 300 }}
