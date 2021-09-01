@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/ArcDevelopment/static/js/main.d6f72cbc.chunk.js",
-    "main.js.map": "/ArcDevelopment/static/js/main.d6f72cbc.chunk.js.map",
+    "main.js": "/ArcDevelopment/static/js/main.8b6c91ee.chunk.js",
+    "main.js.map": "/ArcDevelopment/static/js/main.8b6c91ee.chunk.js.map",
     "runtime-main.js": "/ArcDevelopment/static/js/runtime-main.5f80a14a.js",
     "runtime-main.js.map": "/ArcDevelopment/static/js/runtime-main.5f80a14a.js.map",
-    "static/js/2.12cec3f4.chunk.js": "/ArcDevelopment/static/js/2.12cec3f4.chunk.js",
-    "static/js/2.12cec3f4.chunk.js.map": "/ArcDevelopment/static/js/2.12cec3f4.chunk.js.map",
+    "static/js/2.ed729538.chunk.js": "/ArcDevelopment/static/js/2.ed729538.chunk.js",
+    "static/js/2.ed729538.chunk.js.map": "/ArcDevelopment/static/js/2.ed729538.chunk.js.map",
     "index.html": "/ArcDevelopment/index.html",
-    "static/js/2.12cec3f4.chunk.js.LICENSE.txt": "/ArcDevelopment/static/js/2.12cec3f4.chunk.js.LICENSE.txt",
+    "static/js/2.ed729538.chunk.js.LICENSE.txt": "/ArcDevelopment/static/js/2.ed729538.chunk.js.LICENSE.txt",
     "static/media/Custom Software Icon.c2d29ed8.svg": "/ArcDevelopment/static/media/Custom Software Icon.c2d29ed8.svg",
     "static/media/Footer Adornment.b344a3e1.svg": "/ArcDevelopment/static/media/Footer Adornment.b344a3e1.svg",
     "static/media/analytics.d03f9bf2.svg": "/ArcDevelopment/static/media/analytics.d03f9bf2.svg",
@@ -54,7 +54,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.5f80a14a.js",
-    "static/js/2.12cec3f4.chunk.js",
-    "static/js/main.d6f72cbc.chunk.js"
+    "static/js/2.ed729538.chunk.js",
+    "static/js/main.8b6c91ee.chunk.js"
   ]
 }
